@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    background-color: #004d32;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.profile-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+/* Navigation */
+.nav {
+    background-color: black;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Container */
+.container {
+    padding: 10px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; /* Reduce spacing */
+    margin-top: 10px;
+    align-items: start;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Card Styling */
+.card {
+    background: white;
+    padding: 12px; /* Reduce padding */
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Ensures both sections have the same height */
+}
+
+/* Course List */
+.course {
+    display: block;
+    padding: 8px;
+    margin: 3px 0; /* Reduce spacing */
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.course[data-category="CSE"] {
+    background-color: #c8e6c9;
+}
+
+.course[data-category="WDD"] {
+    background-color: #ffcccb;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #004d32;
+    color: white;
+    margin-top: 10px;
+}

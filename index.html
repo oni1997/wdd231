@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onesmus Maenzanise</title>
+    <meta name="description" content="Onesmus Maenzanise's Web and Computer Programming Certificate Portfolio">
+    <meta name="author" content="Onesmus Maenzanise">
+    <title>Onesmus Maenzanise - Web Programming Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script defer src="scripts/course.js"></script>
 </head>
 <body class="font-roboto bg-gray-100">
-
-    <!-- Header -->
-    <div class="bg-teal-800 text-white p-4 flex items-center justify-center text-center">
+    <header class="bg-teal-800 text-white p-4 flex items-center justify-center text-center">
         <img alt="Profile picture of Onesmus Maenzanise" 
             class="w-32 h-32 object-cover rounded-lg mr-4 md:w-48 md:h-48" 
             src="images/profile.jpg"/>
         <h1 class="text-2xl font-bold">Onesmus Maenzanise</h1>
-    </div>
+    </header>
     
-    <!-- Navigation -->
     <nav class="bg-black text-white p-2 flex flex-wrap justify-center space-x-4 text-xl">
         <a class="hover:text-yellow-500 font-semibold" href="index.html">Home</a>
         <a class="hover:text-yellow-500 font-semibold" href="#">Chamber</a>
@@ -27,38 +29,32 @@
         <a class="hover:text-yellow-500 font-semibold" href="https://www.linkedin.com/in/onesmus-maenzanise-100432252">LinkedIn</a>
     </nav>
 
-    <!-- Main Content -->
-    <div class="p-4">
+    <main class="p-4">
         <h2 class="text-xl mb-4">Home</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             
-            <!-- Course Work Section -->
-            <div class="bg-white p-4 rounded shadow">
+            <section class="bg-white p-4 rounded shadow">
                 <h3 class="bg-teal-800 text-white p-2 rounded-t">Course Work</h3>
                 <div id="courseContainer" class="mt-2"></div>
                 <p class="mt-2 font-bold">Total Credits: <span id="totalCredits">0</span></p>
-            </div>
+            </section>
 
-            <!-- Location Section -->
-            <div class="bg-white p-4 rounded shadow">
+            <section class="bg-white p-4 rounded shadow">
                 <h3 class="bg-teal-800 text-white p-2 rounded-t">Cape Town, South Africa</h3>
                 <img alt="Cape Town Table Mountain" class="w-full mt-2 rounded" height="200" src="images/Table_Mountain.jpg" width="300"/>
                 <p class="text-center mt-2">Table Mountain, Cape Town</p>
-            </div>
+            </section>
         </div>
 
-        <!-- Course Filter -->
-        <div class="bg-teal-800 text-white p-4 mt-4 rounded shadow">
+        <section class="bg-teal-800 text-white p-4 mt-4 rounded shadow">
             <h3 class="text-center">Web and Computer Programming Certificate</h3>
             
-            <!-- Buttons for filtering courses -->
             <div class="flex justify-center space-x-2 mt-2">
                 <button onclick="filterCourses('all')" id="btnAll" class="filter-btn bg-black text-white px-4 py-2 rounded">All</button>
                 <button onclick="filterCourses('CSE')" id="btnCSE" class="filter-btn bg-black text-white px-4 py-2 rounded">CSE</button>
                 <button onclick="filterCourses('WDD')" id="btnWDD" class="filter-btn bg-black text-white px-4 py-2 rounded">WDD</button>
             </div>
 
-            <!-- Course List -->
             <div id="course-list" class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
                 <button class="course bg-brown-500 text-white px-4 py-2 rounded" data-category="CSE">CSE 110</button>
                 <button class="course bg-brown-500 text-white px-4 py-2 rounded" data-category="WDD">WDD 130</button>
@@ -67,15 +63,13 @@
                 <button class="course bg-brown-500 text-white px-4 py-2 rounded" data-category="WDD">WDD 131</button>
                 <button class="course bg-gray-300 text-black px-4 py-2 rounded" data-category="WDD">WDD 231</button>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer class="bg-teal-800 text-white p-4 mt-4 text-center">
         <p id="copyright"></p>
         <img alt="Flag of South Africa" class="inline-block mt-2" height="20" src="images/Flag_of_South_Africa.svg.png" width="20"/>
         <p id="lastModified"></p>
     </footer>
-
 </body>
 </html>
