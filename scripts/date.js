@@ -1,0 +1,2 @@
+document.getElementById("copyright").textContent = `© ${new Date().getFullYear()} Onesmus Maenzanise, South Africa`;
+document.getElementById("lastModified").textContent = `Last Updated: ${document.lastModified}`;
