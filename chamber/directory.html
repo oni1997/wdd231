@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Directory page for the Cape Town Chamber of Commerce, featuring local member businesses, contact information, and membership levels">
+    <meta name="author" content="Onesmus Maenzanise">
+    
+    <!-- Facebook Open Graph -->
+    <meta property="og:title" content="Cape Town Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://username.github.io/wdd231/chamber/images/cape-town-logo.webp">
+    <meta property="og:url" content="https://username.github.io/wdd231/chamber/directory.html">
+    
+    <title>Cape Town Chamber of Commerce | Directory</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/cape-town-logo.webp" alt="Cape Town Chamber of Commerce Logo">
+            </div>
+            <div class="site-name">
+                <h1>Cape Town Chamber of Commerce</h1>
+            </div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="images/linkedin-icon.png" alt="LinkedIn">
+                </a>
+            </div>
+            <button id="hamburger-btn" aria-label="Menu">&#9776;</button>
+        </div>
+        <nav>
+            <ul id="primary-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li class="active"><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <div class="current-date">
+            <span id="current-date"></span>
+        </div>
+    </header>
+    
+    <main class="directory">
+        <h2>Business Directory</h2>
+        <p>Explore our member businesses and services in Cape Town. These local establishments are the backbone of our community economy.</p>
+        
+        <div class="view-toggle">
+            <button id="grid-view" class="active" aria-label="Grid View">
+                <img src="images/grid-icon.png" alt="Grid View">
+            </button>
+            <button id="list-view" aria-label="List View">
+                <img src="images/list-icon.png" alt="List View">
+            </button>
+        </div>
+        
+        <div id="members" class="grid"></div>
+    </main>
+    
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/cape-town-logo.webp" alt="Cape Town Chamber of Commerce Logo">
+                <h3>Cape Town Chamber of Commerce</h3>
+                <p>123 Victoria Road</p>
+                <p>Cape Town, South Africa 8001</p>
+            </div>
+            <div class="footer-contact">
+                <p>info@capetowncc.org</p>
+                <p>+27 21 123 4567</p>
+                <p><a href="https://maps.google.com" target="_blank">📍 Location Map</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Cape Town Chamber of Commerce | <span class="name">Onesmus Maenzanise</span> | WDD 231</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <script src="js/directory.js"></script>
+</body>
+</html>
