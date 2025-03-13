@@ -12,7 +12,6 @@ async function getMembers() {
     }
 }
 
-// Function to display members
 function displayMembers(members) {
     const membersDiv = document.getElementById('members');
     membersDiv.innerHTML = '';
@@ -21,18 +20,15 @@ function displayMembers(members) {
         const memberCard = document.createElement('div');
         memberCard.classList.add('member-card');
         
-        // Add class based on membership level
         if (member.membershipLevel === 3) {
             memberCard.classList.add('gold-member');
         } else if (member.membershipLevel === 2) {
             memberCard.classList.add('silver-member');
         }
         
-        // Create member info div
         const memberInfo = document.createElement('div');
         memberInfo.classList.add('member-info');
         
-        // Add membership level badge/text
         let membershipLabel = '';
         if (member.membershipLevel === 3) {
             membershipLabel = '<span class="membership-badge gold">Gold Member</span>';
@@ -40,7 +36,6 @@ function displayMembers(members) {
             membershipLabel = '<span class="membership-badge silver">Silver Member</span>';
         }
         
-        // Build the HTML content
         memberCard.innerHTML = `
             <img src="${member.image}" alt="${member.name}" loading="lazy">
         `;
@@ -59,7 +54,6 @@ function displayMembers(members) {
     });
 }
 
-// Toggle between grid and list views
 function setupViewToggle() {
     const gridButton = document.getElementById('grid-view');
     const listButton = document.getElementById('list-view');
@@ -80,7 +74,6 @@ function setupViewToggle() {
     });
 }
 
-// Initialize the page when DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     getMembers();
     setupViewToggle();

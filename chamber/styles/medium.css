@@ -1,0 +1,46 @@
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+    .header-content {
+        padding: 0.8rem;
+        flex-wrap: nowrap;
+    }
+    
+    .logo img {
+        width: 100px;
+    }
+    
+    .site-name h1 {
+        font-size: 1.5rem;
+    }
+    
+    #hamburger-btn {
+        display: none;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        flex: 1 1 auto;
+    }
+    
+    main {
+        padding: 1.5rem;
+    }
+    
+    #members.grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-top {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        text-align: left;
+    }
+    
+    .footer-logo, .footer-contact {
+        max-width: 45%;
+    }
+}
