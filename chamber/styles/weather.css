@@ -1,0 +1,135 @@
+/* Weather styles */
+.weather-card {
+    margin: 2rem 0;
+}
+
+.current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.weather-primary {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#current-temp {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#weather-icon {
+    width: 64px;
+    height: 64px;
+}
+
+.weather-desc {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.forecast h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.forecast-day {
+    text-align: center;
+    flex: 1;
+    min-width: 80px;
+    background-color: rgba(109, 157, 197, 0.1);
+    padding: 0.8rem;
+    border-radius: 5px;
+}
+
+.day-name {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.forecast-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.forecast-temp {
+    font-weight: bold;
+}
+
+/* Spotlight styles */
+.company-spotlight {
+    margin: 2rem 0;
+}
+
+.spotlight-container {
+    display: grid;
+    gap: 1rem;
+}
+
+/* Mobile: single column */
+.spotlight {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.spotlight-logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.spotlight h3 {
+    margin: 0.5rem 0;
+}
+
+.spotlight p {
+    margin: 0.25rem 0;
+}
+
+.website-link {
+    display: inline-block;
+    margin: 0.5rem 0;
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.membership-level {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.gold {
+    color: #d4af37;
+}
+
+.silver {
+    color: #c0c0c0;
+}
+
+/* Medium screens: two columns */
+@media screen and (min-width: 500px) {
+    .spotlight-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large screens: three columns if 3 spotlights */
+@media screen and (min-width: 800px) {
+    .spotlight-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}

@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Table Mountain Resort",
+        "address": "78 Scenic Drive, Cape Town",
+        "phone": "+27 21 2029 1111",
+        "website": "https://tablemountainresort.com",
+        "image": "images/table-mountain-resort.webp",
+        "membershipLevel": 3,
+        "description": "Luxury accommodation with breathtaking views of Table Mountain and modern amenities.",
+        "founded": 1995
+    },
+    {
+        "name": "V&A Waterfront Market",
+        "address": "12 Quay Street, Cape Town",
+        "phone": "+27 21 2029 2222",
+        "website": "https://vawaterfrontmarket.com",
+        "image": "images/va-waterfront-market.webp",
+        "membershipLevel": 2,
+        "description": "A vibrant market offering local products, spices, and handcrafted items from across South Africa.",
+        "founded": 2003
+    },
+    {
+        "name": "Cape Peninsula Tours",
+        "address": "45 Adventure Avenue, Cape Town",
+        "phone": "+27 21 2029 3333",
+        "website": "https://capepeninsulatours.com",
+        "image": "images/cape-peninsula-tours.webp",
+        "membershipLevel": 3,
+        "description": "Expert guided tours of historical sites, nature reserves, and scenic coastal routes.",
+        "founded": 2008
+    },
+    {
+        "name": "Cape Town Museum",
+        "address": "33 Heritage Lane, Cape Town",
+        "phone": "+27 21 2029 4444",
+        "website": "https://capetownmuseum.org",
+        "image": "images/cape-town-museum.webp",
+        "membershipLevel": 1,
+        "description": "Preserving and showcasing South Africa's rich history and cultural heritage.",
+        "founded": 1975
+    },
+    {
+        "name": "The Green Café",
+        "address": "56 Greenway Road, Cape Town",
+        "phone": "+27 21 2029 5555",
+        "website": "https://thegreencafe.com",
+        "image": "images/the-green-cafe.webp",
+        "membershipLevel": 2,
+        "description": "A café offering organic South African cuisine with a focus on locally sourced ingredients.",
+        "founded": 2015
+    },
+    {
+        "name": "TechHub Solutions",
+        "address": "89 Innovation Way, Cape Town",
+        "phone": "+27 21 2029 6666",
+        "website": "https://techhubsolutions.com",
+        "image": "images/techhub-solutions.webp",
+        "membershipLevel": 3,
+        "description": "Providing IT services, software development, and digital solutions for local businesses.",
+        "founded": 2018
+    },
+    {
+        "name": "Cape Town Textiles",
+        "address": "23 Artisan Alley, Cape Town",
+        "phone": "+27 21 2029 7777",
+        "website": "https://capetowntextiles.com",
+        "image": "images/cape-town-textiles.webp",
+        "membershipLevel": 2,
+        "description": "Traditional South African textiles, clothing, and home decor handcrafted by local artisans.",
+        "founded": 1989
+    },
+    {
+        "name": "Western Cape Agricultural Cooperative",
+        "address": "101 Farming Road, Cape Town",
+        "phone": "+27 21 2029 8888",
+        "website": "https://westerncapeagricoop.org",
+        "image": "images/western-cape-agriculture.webp",
+        "membershipLevel": 1,
+        "description": "Supporting local farmers with sustainable agricultural practices and crop production.",
+        "founded": 2010
+    }
+]

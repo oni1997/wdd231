@@ -1,5 +1,5 @@
 @media only screen and (min-width: 600px) and (max-width: 959px) {
-    .header-content {
+    .header-wrapper {
         padding: 0.8rem;
         flex-wrap: nowrap;
     }
@@ -8,15 +8,15 @@
         width: 100px;
     }
     
-    .site-name h1 {
+    .title h1 {
         font-size: 1.5rem;
     }
     
-    #hamburger-btn {
+    #hamburger {
         display: none;
     }
     
-    nav ul {
+    nav ul#primary-nav {
         display: flex;
         justify-content: center;
     }
@@ -33,14 +33,42 @@
         grid-template-columns: repeat(2, 1fr);
     }
     
-    .footer-top {
+    .home-main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "hero hero"
+            "events weather"
+            "spotlight spotlight";
+    }
+    
+    .hero {
+        grid-area: hero;
+    }
+    
+    .event-section {
+        grid-area: events;
+    }
+    
+    .weather-card {
+        grid-area: weather;
+    }
+    
+    .company-spotlight {
+        grid-area: spotlight;
+    }
+    
+    .footer-wrapper {
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-around;
         text-align: left;
     }
     
-    .footer-logo, .footer-contact {
+    .footer-logo, .footer-info {
         max-width: 45%;
+    }
+    
+    .call-to-action {
+        max-width: 60%;
     }
 }
