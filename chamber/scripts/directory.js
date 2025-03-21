@@ -1,4 +1,3 @@
-//directory.js
 async function getMembers() {
     try {
         const response = await fetch('data/members.json');
