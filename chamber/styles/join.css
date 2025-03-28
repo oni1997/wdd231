@@ -1,0 +1,105 @@
+/* Additional styles for join page */
+.join-page-container {
+    display: grid;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .join-page-container {
+        grid-template-columns: 1fr 300px;
+    }
+}
+
+.join-form {
+    background-color: var(--light-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.join-form form {
+    display: grid;
+    gap: 1rem;
+}
+
+.join-form label {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.join-form input, 
+.join-form select, 
+.join-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.join-form input[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.join-form input[type="submit"]:hover {
+    background-color: var(--dark-color);
+}
+
+.membership-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-card {
+    background-color: var(--light-color);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.membership-card h2 {
+    margin-bottom: 0.5rem;
+}
+
+.membership-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: var(--light-color);
+    margin: 10% auto;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close-modal {
+    color: var(--text-color);
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}

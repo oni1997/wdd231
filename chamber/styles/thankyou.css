@@ -1,0 +1,36 @@
+.thankyou-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: var(--light-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.thankyou-container h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.submitted-info {
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.submitted-info p {
+    margin: 0.5rem 0;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    text-decoration: none;
+    border-radius: 4px;
+}
