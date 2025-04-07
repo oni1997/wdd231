@@ -72,3 +72,25 @@
         max-width: 60%;
     }
 }
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+    /* Medium screens (641px to 1024px) - two columns */
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+    
+    .discover-intro {
+        width: 90%;
+        margin: 0 auto 2rem;
+    }
+    
+    /* Add hover effect for images (not in mobile view) */
+    .attraction-card img:hover {
+        transform: scale(1.05);
+    }
+}

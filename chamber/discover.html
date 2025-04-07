@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the beauty and attractions of Cape Town through the Chamber of Commerce discover page, featuring local points of interest, demographics, and information for visitors">
+    <meta name="author" content="Onesmus Maenzanise">
+    
+    <!-- Facebook Open Graph -->
+    <meta property="og:title" content="Cape Town Chamber of Commerce | Discover">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://oni1997.github.io/wdd231/chamber/images/CapeTownLogo.PNG">
+    <meta property="og:url" content="https://oni1997.github.io/wdd231/chamber/discover.html">
+    
+    <title>Cape Town Chamber of Commerce | Discover</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="logo">
+                <img src="images/CapeTownLogo.PNG" alt="Cape Town Chamber of Commerce Logo">
+            </div>
+            <div class="title">
+                <h1>Cape Town Chamber of Commerce</h1>
+            </div>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/icons8-facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="images/icons8-linkedin.svg" alt="LinkedIn">
+                </a>
+            </div>
+            <button id="hamburger" aria-label="Menu">&#9776;</button>
+        </div>
+        <nav>
+            <ul id="primary-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <div class="date-header">
+            <span id="current-date"></span>
+        </div>
+    </header>
+    
+    <main class="discover">
+        <section class="discover-intro">
+            <h2>Discover Cape Town</h2>
+            <p>Explore the vibrant heart of South Africa through its most iconic city. Cape Town offers a unique blend of natural beauty, rich history, and diverse culture. From stunning beaches to historic landmarks, there's something for everyone in the Mother City.</p>
+            
+            <div class="visitor-message" id="visitor-message">
+                <!-- This will be filled by JavaScript based on localStorage -->
+            </div>
+        </section>
+        
+        <section class="discover-grid" id="discover-grid">
+            <!-- Cards will be dynamically loaded from JSON data -->
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-logo">
+                <img src="images/CapeTownLogo.PNG" alt="Cape Town Chamber of Commerce Logo">
+            </div>
+            <div class="footer-info">
+                <h3>Cape Town Chamber of Commerce</h3>
+                <p>123 Victoria Road</p>
+                <p>Cape Town, South Africa 8001</p>
+                <p>info@capetowncc.org</p>
+                <p>+27 21 123 4567</p>
+                <p><a href="https://maps.google.com" target="_blank">📍 Location Map</a></p>
+            </div>
+        </div>
+        <div class="footer-base">
+            <p>&copy; <span id="current-year"></span> Cape Town Chamber of Commerce | <span class="name">Onesmus Maenzanise</span> | WDD 231</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+    
+    <script src="scripts/script.js"></script>
+    <script src="scripts/discover.js"></script>
+</body>
+</html>

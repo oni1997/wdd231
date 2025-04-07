@@ -77,3 +77,32 @@
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+@media only screen and (min-width: 1025px) {
+    /* Large screens (1025px and up) - four columns */
+    .discover-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+    }
+    
+    .discover-intro {
+        width: 80%;
+        margin: 0 auto 2rem;
+    }
+    
+    /* Add hover effect for images (not in mobile view) */
+    .attraction-card img:hover {
+        transform: scale(1.05);
+    }
+    
+    .attraction-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .attraction-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+}

@@ -412,3 +412,116 @@ footer {
     background-color: rgba(192, 192, 192, 0.2);
     color: #c0c0c0;
 }
+
+/* Add these styles to your base.css file */
+
+/* Discover Page Styles */
+.discover {
+    padding: 1rem;
+    min-height: 60vh;
+}
+
+.discover-intro {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.discover h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.visitor-message {
+    background-color: var(--accent-color);
+    color: var(--light-color);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Grid layout for small screens (320px to 640px) - single column */
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.attraction-card {
+    background-color: var(--light-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.attraction-card:nth-child(1) { grid-area: card1; }
+.attraction-card:nth-child(2) { grid-area: card2; }
+.attraction-card:nth-child(3) { grid-area: card3; }
+.attraction-card:nth-child(4) { grid-area: card4; }
+.attraction-card:nth-child(5) { grid-area: card5; }
+.attraction-card:nth-child(6) { grid-area: card6; }
+.attraction-card:nth-child(7) { grid-area: card7; }
+.attraction-card:nth-child(8) { grid-area: card8; }
+
+.attraction-card h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.attraction-card figure {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.attraction-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.attraction-card address {
+    margin: 1rem 0;
+    font-style: italic;
+    color: var(--text-color);
+}
+
+.attraction-card p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+.attraction-card button {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.attraction-card button:hover {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+}

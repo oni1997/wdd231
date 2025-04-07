@@ -1,0 +1,52 @@
+{
+    "attractions": [
+        {
+            "name": "Table Mountain Resort",
+            "address": "78 Scenic Drive, Cape Town",
+            "image": "images/table-mountain-resort.webp",
+            "description": "Luxury accommodation with breathtaking views of Table Mountain and modern amenities."
+        },
+        {
+            "name": "V&A Waterfront Market",
+            "address": "12 Quay Street, Cape Town",
+            "image": "images/va-waterfront-market.webp",
+            "description": "A vibrant market offering local products, spices, and handcrafted items from across South Africa."
+        },
+        {
+            "name": "Cape Peninsula Tours",
+            "address": "45 Adventure Avenue, Cape Town",
+            "image": "images/cape-peninsula-tours.webp",
+            "description": "Expert guided tours of historical sites, nature reserves, and scenic coastal routes."
+        },
+        {
+            "name": "Cape Town Museum",
+            "address": "33 Heritage Lane, Cape Town",
+            "image": "images/cape-town-museum.webp",
+            "description": "Preserving and showcasing South Africa's rich history and cultural heritage."
+        },
+        {
+            "name": "The Green Café",
+            "address": "56 Greenway Road, Cape Town",
+            "image": "images/the-green-cafe.webp",
+            "description": "A café offering organic South African cuisine with a focus on locally sourced ingredients."
+        },
+        {
+            "name": "TechHub Solutions",
+            "address": "89 Innovation Way, Cape Town",
+            "image": "images/techhub-solutions.webp",
+            "description": "Providing IT services, software development, and digital solutions for local businesses."
+        },
+        {
+            "name": "Cape Town Textiles",
+            "address": "23 Artisan Alley, Cape Town",
+            "image": "images/cape-town-textiles.webp",
+            "description": "Traditional South African textiles, clothing, and home decor handcrafted by local artisans."
+        },
+        {
+            "name": "Western Cape Agricultural Cooperative",
+            "address": "101 Farming Road, Cape Town",
+            "image": "images/western-cape-agriculture.webp",
+            "description": "Supporting local farmers with sustainable agricultural practices and crop production."
+        }
+    ]
+}
