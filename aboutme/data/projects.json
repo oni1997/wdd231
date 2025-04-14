@@ -1,0 +1,44 @@
+[
+    {
+        "title": "HealthFlow App",
+        "description": "A comprehensive health monitoring web application designed to empower users in managing their personal health through advanced tracking and AI-powered insights.",
+        "features": [
+            "Secure user authentication",
+            "Personalized health dashboard",
+            "Symptom and medication tracking",
+            "AI-powered health recommendations"
+        ],
+        "technologies": ["React.js", "Firebase", "Gemini AI", "CSS3"],
+        "purpose": "Healthcare Technology - Personal Health Management",
+        "link": "https://github.com/oni1997/healthflow",
+        "extendedDescription": "A comprehensive health monitoring web application designed to empower users in managing their personal health through advanced tracking and AI-powered insights."
+    },
+    {
+        "title": "Adventure Game",
+        "description": "An innovative, interactive storytelling experience inspired by Black Mirror: Bandersnatch, offering players immersive, choice-driven gameplay across multiple unique maps.",
+        "features": [
+            "Multiple interactive maps",
+            "Choice-driven storytelling",
+            "Rich, detailed scenarios",
+            "Multiple possible endings"
+        ],
+        "technologies": ["React", "JavaScript", "Interactive Storytelling"],
+        "purpose": "Game Development - Interactive Narrative Experience",
+        "link": "https://my-adventure-game-eta.vercel.app/",
+        "extendedDescription": "An innovative, interactive storytelling experience inspired by Black Mirror: Bandersnatch, offering players immersive, choice-driven gameplay across multiple unique maps."
+    },
+    {
+        "title": "Interledger Payment WebApp",
+        "description": "An innovative digital content subscription platform implementing a flexible pay-as-you-use billing model that ensures fair and dynamic pricing for users.",
+        "features": [
+            "Dynamic daily usage-based billing",
+            "Monthly payment cap",
+            "Pending payments dashboard",
+            "Fair pricing mechanism"
+        ],
+        "technologies": ["Interledger", "React", "Firebase", "Web3"],
+        "purpose": "Fintech - Innovative Subscription Management",
+        "link": "https://github.com/interledgerhackathonteam22/view",
+        "extendedDescription": "An innovative digital content subscription platform implementing a flexible pay-as-you-use billing model that ensures fair and dynamic pricing for users."
+    }
+]

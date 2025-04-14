@@ -1,3 +1,4 @@
+/* Light theme (default) */
 :root {
     --primary-color: #1a2b3c;
     --secondary-color: #2c7da0;
@@ -7,6 +8,29 @@
     --text-secondary: #34495e;
     --white: #ffffff;
     --card-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+    --primary-color: #2c3e50;
+    --secondary-color: #61a5c2;
+    --accent-color: #2c7da0;
+    --background-color: #1a1a1a;
+    --text-primary: #f4f6f9;
+    --text-secondary: #e1e1e1;
+    --white: #ffffff;
+    --card-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Theme toggle button styles */
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    color: var(--white);
 }
 
 * {
