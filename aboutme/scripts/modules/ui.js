@@ -1,6 +1,19 @@
 export function createProjectCard(project) {
+    let statusClass = '';
+    let statusText = '';
+    
+    // Add conditional branching
+    if (project.link) {
+        statusClass = 'active-project';
+        statusText = 'Live Project';
+    } else {
+        statusClass = 'archived-project';
+        statusText = 'Archive Only';
+    }
+
     return `
-        <div class="project card">
+        <div class="project card ${statusClass}">
+            <span class="status">${statusText}</span>
             <h3>${project.title}</h3>
             <p>${project.description}</p>
             <div class="project-details">
@@ -50,4 +63,14 @@ export async function fetchSkills() {
         console.error('Error fetching skills:', error);
         return [];
     }
+}
+
+export function createErrorMessage(error) {
+    return `
+        <div class="error-message">
+            <h3>Error: ${error.code}</h3>
+            <p>${error.message}</p>
+            <small>Time: ${new Date().toLocaleString()}</small>
+        </div>
+    `;
 }

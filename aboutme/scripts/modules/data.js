@@ -1,10 +1,10 @@
-export async function fetchProjects() {
-    try {
-        const response = await fetch('data/projects.json');
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error('Error fetching projects:', error);
-        return [];
-    }
+export function processProjects(projects) {
+    return projects
+        .filter(p => p.technologies.length > 0)
+        .map(p => ({
+            ...p,
+            techCount: p.technologies.length,
+            summary: `${p.title} - ${p.description.substring(0, 100)}...`
+        }))
+        .sort((a, b) => b.techCount - a.techCount);
 }
