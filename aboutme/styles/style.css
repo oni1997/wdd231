@@ -327,6 +327,41 @@ main {
     color: var(--secondary-color);
     font-weight: bold;
 }
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.project-tags span {
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.project-tags span:hover {
+    transform: translateY(-2px);
+    background-color: var(--secondary-color);
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+    .project-tags {
+        gap: 6px;
+    }
+    
+    .project-tags span {
+        font-size: 0.8rem;
+        padding: 3px 10px;
+    }
+}
 /* Footer Styles */
 footer {
     background-color: var(--primary-color);

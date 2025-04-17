@@ -1,17 +1,40 @@
+// Enhanced JavaScript functionality
 document.addEventListener("DOMContentLoaded", function () {
-    // Update Current Year
-    const currentYear = new Date().getFullYear();
-    const yearElements = document.querySelectorAll("#currentYear");
-    yearElements.forEach(element => {
-        element.textContent = currentYear;
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+        document.body.dataset.theme = 
+            document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('theme', document.body.dataset.theme);
     });
 
-    // Navigation Active State
-    const currentLocation = location.pathname.split('/').pop();
-    const navLinks = document.querySelectorAll('nav ul li a');
-    navLinks.forEach(link => {
-        if(link.getAttribute('href') === currentLocation) {
-            link.classList.add('active');
-        }
+    // Project filtering
+    const projects = JSON.parse(localStorage.getItem('projects') || '[]');
+    const techFilter = document.getElementById('tech-filter');
+    techFilter?.addEventListener('change', (e) => {
+        const filtered = projects.filter(p => 
+            p.technologies.includes(e.target.value)
+        );
+        updateProjectDisplay(filtered);
     });
+
+    // Form validation with error handling
+    const contactForm = document.querySelector('.contact-form');
+    contactForm?.addEventListener('submit', validateForm);
 });
+
+function validateForm(e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const errors = [];
+
+    if (!formData.get('email').includes('@')) {
+        errors.push('Invalid email address');
+    }
+
+    if (errors.length === 0) {
+        handleFormSubmission(formData);
+    } else {
+        showErrors(errors);
+    }
+}
